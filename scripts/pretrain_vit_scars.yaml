@@ -1,0 +1,39 @@
+alg: rKD
+comment: vit_small16_scars
+pretrain: True
+pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_deitsmall16_pretrain.pth
+arch: vit
+is_head: False
+gpus: "0"
+
+# dataset related
+dataset: scars
+batch_size: 512
+n_views: 2
+num_labeled_classes: 98
+num_unlabeled_classes: 98
+save_model: True
+use_ssb_splits: True
+
+# network
+num_heads: 
+proj_dim: 256
+hidden_dim: 2048
+num_hidden_layers: 1
+grad_from_block: 8
+feat_dim: 384
+
+# learning 
+lr: 1.0e-3
+min_lr: 1.0e-4
+warmup_epochs: 5
+pretrain_epochs: 50
+max_epochs: 100
+momentum_opt: 0.9
+weight_decay_opt: 1.5e-4
+temperature: 0.1
+num_workers: 8
+num_iters_sk: 3
+epsilon_sk: 0.05
+amp: True
+eval: False

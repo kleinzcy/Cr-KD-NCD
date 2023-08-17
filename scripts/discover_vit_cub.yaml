@@ -1,0 +1,42 @@
+alg: baseline
+# comment: discover_vit_bs512_unknown_debug
+pretrain: False
+eval: False
+pretrained_path: checkpoints/supervised_pretrain/pretrained_cub_100_100.pth
+eval_model_path: checkpoints/discover/discover_cub_100_100.pth
+arch: vit
+is_head: False
+gpus: "0"
+
+# dataset related
+dataset: cub
+batch_size: 512
+n_views: 2
+num_labeled_classes: 98
+num_unlabeled_classes: 98
+save_model: True
+use_ssb_splits: True
+
+# network
+num_heads: 2
+proj_dim: 256
+hidden_dim: 2048
+num_hidden_layers: 1
+grad_from_block: 11
+feat_dim: 768
+
+# learning 
+lr: 1.0e-3
+min_lr: 1.0e-4
+warmup_epochs: 10
+max_epochs: 100
+momentum_opt: 0.9
+weight_decay_opt: 1.5e-4
+temperature: 0.1
+kd_temperature: 4
+num_workers: 8
+num_iters_sk: 3
+epsilon_sk: 0.05
+amp: True
+alpha: 0.1
+unknown_cluster: False
