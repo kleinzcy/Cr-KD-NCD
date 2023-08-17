@@ -19,18 +19,22 @@ figcaption {
   margin: 0 auto;
 }
 </style> -->
-<div style="text-align:center;">
-<figure>
-  <img src="assets/fig1.png" alt="Alt Text" width="400" height="250">
-  <figcaption>The motivation of our method</figcaption>
-</figure>
 
-<figure>
-  <img src="assets/fig2.png" alt="Alt Text" width="600" height="300">
-  <figcaption>The pipeline of our method</figcaption>
-</figure>
-</div>
-
+<br>
+<p align="center">
+    <img src="./assets/fig1.png"/ width=50%> <br />
+    <em>
+    The motivation of our method
+    </em>
+</p>
+<br>
+<p align="center">
+    <img src="./assets/fig2.png"/ width=80%> <br />
+    <em>
+    Overview of the proposed architecture.
+    </em>
+</p>
+<br>
 
 ## Installation
 
