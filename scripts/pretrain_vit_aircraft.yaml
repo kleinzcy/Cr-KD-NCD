@@ -1,7 +1,7 @@
 alg: rKD
-comment: vit_small16_aircraft
+comment: vit_pretrain_aircraft
 pretrain: True
-pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_deitsmall16_pretrain.pth
+pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_vitbase16_pretrain.pth
 arch: vit
 is_head: False
 gpus: "0"
@@ -29,7 +29,6 @@ lr: 1.0e-3
 min_lr: 1.0e-4
 warmup_epochs: 5
 pretrain_epochs: 50
-max_epochs: 100
 momentum_opt: 0.9
 weight_decay_opt: 1.5e-4
 temperature: 0.1

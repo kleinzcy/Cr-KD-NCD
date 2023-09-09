@@ -1,8 +1,7 @@
 alg: rKD
-comment: vit_small16_cub
+comment: vit_pretrain_cub
 pretrain: True
-# pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_vitbase16_pretrain.pth
-pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_deitsmall16_pretrain.pth
+pretrained_path: /public/home/zhangchy2/workdir/pretrained/dino/dino_vitbase16_pretrain.pth
 arch: vit
 is_head: False
 gpus: "0"
@@ -22,8 +21,8 @@ proj_dim: 256
 hidden_dim: 2048
 overcluster_factor: 1
 num_hidden_layers: 1
-grad_from_block: 8
-feat_dim: 384
+grad_from_block: 11
+feat_dim: 768
 
 # learning 
 lr: 1.0e-3

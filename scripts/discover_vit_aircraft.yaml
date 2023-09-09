@@ -37,6 +37,5 @@ num_iters_sk: 3
 epsilon_sk: 0.05
 amp: True
 eval: False
-eval_func: v3
 alpha: 0.1
 unknown_cluster: False
