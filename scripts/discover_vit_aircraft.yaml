@@ -1,9 +1,10 @@
 alg: baseline
 # comment: discover_vit_bs512_unknown_debug
 pretrain: False
-pretrained_path: your_pretrained_path
+eval: False
+pretrained_path: checkpoints/supervised_pretrain/pretrained_aircraft_50_50.pth
+eval_model_path: checkpoints/discover/discover_aircraft_50_50.pth
 arch: vit
-is_head: False
 gpus: "0"
 
 # dataset related

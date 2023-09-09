@@ -57,7 +57,7 @@ Before discover novel classes, we first train the model on the known classes. Fo
 python rKD.py --c pretrain_cifar.yaml
 ```
 
-For three fine-grained datasets, you have to first download the unsupervise pretrained ViT-B16 model from [DINO's](https://github.com/facebookresearch/dino) repo. And then finetune the model by:
+For three fine-grained datasets, you have to first download the unsupervised pretrained ViT-B16 model from [DINO's](https://github.com/facebookresearch/dino) repo. And then finetune the model by:
 
 ```
 python rKD.py --c pretrain_vit_aircraft.yaml
@@ -65,7 +65,7 @@ python rKD.py --c pretrain_vit_cub.yaml
 python rKD.py --c pretrain_vit_scars.yaml
 ```
 
-After you finish the supervised training, you have to modify the **pretrained_path** in **script/discover_{dataset name}.yaml** to your pretrain path.
+After you finish the supervised training, you have to modify the **pretrained_path** in **script/discover_{dataset name}.yaml** to your pretrain path. We also provide the pretrain model in [Google Driver](https://drive.google.com/drive/folders/1dGmktoN0It8eNyFCvxt_bc9BPz_ksW4H?usp=drive_link).  
 
 ### Discovery training stage:
 Run following scripts to discover novel classes:

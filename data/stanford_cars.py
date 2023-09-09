@@ -8,9 +8,10 @@ from torchvision.datasets.folder import default_loader
 from torch.utils.data import Dataset
 
 from data.data_utils import subsample_instances
+from config import scars_root
 
-car_root = "/public/home/zhangchy2/workdir/data/NCD/stanford_cars/cars_{}/"
-meta_default_path = "/public/home/zhangchy2/workdir/data/NCD/stanford_cars/devkit/cars_{}.mat"
+car_root = scars_root + "/cars_{}/"
+meta_default_path = scars_root + "/devkit/cars_{}.mat"
 
 class CarsDataset(Dataset):
     """
