@@ -10,8 +10,8 @@ gpus: "0"
 dataset: cub
 batch_size: 512
 n_views: 2
-num_labeled_classes: 98
-num_unlabeled_classes: 98
+num_labeled_classes: 100
+num_unlabeled_classes: 100
 save_model: True
 use_ssb_splits: True
 

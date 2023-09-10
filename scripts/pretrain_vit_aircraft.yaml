@@ -10,8 +10,8 @@ gpus: "0"
 dataset: aircraft
 batch_size: 512
 n_views: 2
-num_labeled_classes: 98
-num_unlabeled_classes: 98
+num_labeled_classes: 50
+num_unlabeled_classes: 50
 save_model: True
 use_ssb_splits: True
 
