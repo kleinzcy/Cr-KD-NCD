@@ -109,12 +109,7 @@ def swapped_prediction(args, logits, targets):
 def train_pretrain(model, train_loader, test_loader, args):
     model = model.cuda()
     model_statistics(model)
-    optimizer = torch.optim.SGD(
-        model.parameters(),
-        lr=args.lr,
-        momentum=args.momentum_opt,
-        weight_decay=args.weight_decay_opt,
-    )
+    optimizer = AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay_opt)
 
     scheduler = LinearWarmupCosineAnnealingLR(
         optimizer,
