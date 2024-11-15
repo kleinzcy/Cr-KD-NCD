@@ -9,8 +9,8 @@ batch_size: 512
 multicrop: True
 num_large_crops: 2
 num_small_crops: 2
-num_labeled_classes: 80
-num_unlabeled_classes: 20
+num_labeled_classes: 50
+num_unlabeled_classes: 50
 save_model: True
 
 # network
